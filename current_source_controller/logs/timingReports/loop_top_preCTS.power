@@ -1,0 +1,87 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 16.12-s051_1 (64bit) 08/17/2016 12:18 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2020-Apr-07 20:09:43 (2020-Apr-08 00:09:43 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: loop_top
+*
+*	Liberty Libraries used: 
+*	        typical_view: /home/sparclab/a/das60/TECHNOLOGY/FROM_MOSIS/TSMC/65nm/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65lp_200a/tcbn65lptc_ccs.lib
+*
+*	Power Domain used: 
+*		Rail:        VDD 	Voltage:        1.2 
+*
+*       Power View : typical_view
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile /home/sparclab/a/ghosh69/march_20_tapeout/current_source_controller/logs/timingReports/loop_top_preCTS.power
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.63240259 	   82.3328%
+Total Switching Power:       0.13567103 	   17.6631%
+Total Leakage Power:         0.00003128 	    0.0041%
+Total Power:                 0.76810491 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.5306     0.02023   1.519e-05      0.5508       71.71 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                     0.1018      0.1154   1.609e-05      0.2173       28.29 
+Clock (Combinational)                  0           0           0           0           0 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                             0.6324      0.1357   3.128e-05      0.7681         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.2     0.6324      0.1357   3.128e-05      0.7681         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power: u_up_down_counter_32b_avg/OUT_COUNT_reg[8] (DFSNQD1): 	   0.01263 
+* 		Highest Leakage Power: u_up_down_counter_32b_avg/OUT_COUNT_reg[10] (DFSNQD1): 	 3.638e-07 
+* 		Total Cap: 	9.27559e-13 F
+* 		Total instances in design:   337
+* 		Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+
+Total leakage power = 3.128e-05 mW
+ Cell usage statistics:  
+ Library tcbn65lptc_ccs , 337 cells ( 100.000000%) , 3.128e-05 mW ( 100.000000%  ) 
+ 
