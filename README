@@ -1,0 +1,38 @@
+README
+GNFB.emf: Global negative feedback loop of Syn-stellar.[Details: Ghosh et. al, ISSCC 21, JSSC 21] 
+
+Architecture.emf: Architecture of Stellar+. [Details: Ghosh et. al, ISSCC 21, JSSC 21] 
+
+current_source_controller: This folder contains synthesizable files for Syn-stellar countermeasure. Description at all files explain the functionality of file. 
+	counter_v1.v 
+	logs
+	loop_top_v2.v
+	oscillator_counter_v1.v
+	ring_osc.c
+	ring_oscillator_3_stage_array_4.mapped.v
+	ring_oscillator_61_stage.mapped.v
+	toggle_flip_flop.v
+	up_down_counter_32b_avg.v
+
+unprotected_aes256: This folder contains all the files required for unprotected AES-256. Description at all the files explain the functionality. Top synthesizable file to include is  aes_scanchain_if.v
+	addroundkey.v
+	aes.v
+	aes_if.v
+	aes_if_tb.v
+	aes_round.v
+	aes_scanchain_if.v
+	aes_scanchain_if_tb.v
+	aes_tb.v
+	counter_mux.v
+	keyexpand.v
+	mixcolumns.v
+	parallel_to_serial.v
+	sbox.v
+	scan_chain.v
+	scan_chain_aes.v
+	scan_chain_counter.v
+	shiftrows.v
+	single_cell_scan.v
+	subbytes.v
+	top_module.mapped.sdc
+	top_module.mapped.v
