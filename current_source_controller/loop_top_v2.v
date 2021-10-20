@@ -1,8 +1,8 @@
 //Copyright: SparcLab, Purdue University
 //Engineer: Archisman Ghosh
-//This module is the global negative feedback loop. This is the top file of
-//'Current source controller' block in the paper figure. This file calls
-// all the modules except RO. 
+//This module is the global negative feedback loop.  This file calls
+// all the modules except RO. This file is called from
+// closed_loop_current_source_controller_v2. 
 //
 /***************************************************************************/
 module loop_top_v2(CLK,RST_N,LOOP_BYPASS,COUNT_DONE,TOTAL_COUNT,COUNTER,LOWER_VOLTAGE_BOUND,UPPER_VOLTAGE_BOUND,NO_CURRENT_SOURCE,CURRENT_SOURCE_ENABLE);
@@ -20,7 +20,7 @@ output COUNT_DONE;
 
 
 counter_v1 u_counter(CLK,RST_N,TOTAL_COUNT,COUNT,COUNT_DONE);
-oscillator_counter u_oscillator_counter(OSC_OUT,COUNT_DONE,COUNTER,RST_N,FORCE_RST);
+//oscillator_counter u_oscillator_counter(OSC_OUT,COUNT_DONE,COUNTER,RST_N,FORCE_RST);
 up_down_counter_32b_avg_v2 u_up_down_counter_32b_avg(CLK,RST_N,LOWER_VOLTAGE_BOUND,UPPER_VOLTAGE_BOUND,COUNTER,COUNT_DONE,LOOP_BYPASS,NO_CURRENT_SOURCE,CURRENT_SOURCE_ENABLE);
 
 
